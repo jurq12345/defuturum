@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>DE FUTURUM — Kredyt szybciej, łatwiej i bez stresu</title>
+<meta name="description" content="DE FUTURUM to doradztwo kredytowe i finansowe w Warszawie. Kredyty gotówkowe, hipoteczne, firmowe, pozabankowe, leasing oraz pomoc w spłacie zadłużenia i czyszczeniu BIK. Bezpłatna konsultacja." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#2D274D" />
+<meta property="og:title" content="DE FUTURUM — Kredyt szybciej, łatwiej i bez stresu" />
+<meta property="og:description" content="Doradztwo finansowe i pośrednictwo kredytowe — kredyty, leasing, pożyczki pod zastaw nieruchomości i czyszczenie baz kredytowych. Bezpłatna konsultacja." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://defuturum.com/" />
+<meta property="og:site_name" content="DE FUTURUM" />
+<meta property="og:locale" content="pl_PL" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="DE FUTURUM — Kredyt szybciej, łatwiej i bez stresu" />
+<meta name="twitter:description" content="Doradztwo finansowe i pośrednictwo kredytowe — kredyty, leasing, pożyczki pod zastaw nieruchomości i czyszczenie baz kredytowych." />
+<link rel="canonical" href="https://defuturum.com/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232D274D'/%3E%3Cpath d='M14 42 L24 30 L32 36 L48 16' stroke='%23E7C84B' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40 16 H48 V24' stroke='%23E7C84B' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "DE FUTURUM",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Aleja Jana Pawła II 43A/37b",
+    "addressLocality": "Warszawa",
+    "addressCountry": "PL"
+  },
+  "telephone": "+48538100006",
+  "email": "kontakt@defuturum.com",
+  "url": "https://defuturum.com"
+}
+</script>
+<style>
+  :root{
+    --navy-950:#1c1833;
+    --navy-900:#2D274D;
+    --navy-800:#382f5c;
+    --navy-700:#453a70;
+    --gold-400:#E7C84B;
+    --gold-300:#f1da85;
+    --gold-ink:#4a3c08;
+    --ink:#211c3a;
+    --muted:#6a6284;
+    --muted-dark:#c3bcda;
+    --paper:#f7f5fb;
+    --white:#ffffff;
+    --line:#e8e3f2;
+    --line-dark:#453a70;
+    --radius-lg:26px;
+    --radius-md:18px;
+    --radius-sm:12px;
+    --shadow-md:0 20px 40px -20px rgba(28,24,51,.28);
+    --shadow-lg:0 30px 60px -25px rgba(28,24,51,.38);
+    --container:1160px;
+    --ff-head:'Cormorant Garamond',Georgia,serif;
+    --ff-body:'Inter',system-ui,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
+  }
+  body{margin:0;font-family:var(--ff-body);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;}
+  h1,h2,h3,h4{font-family:var(--ff-head);margin:0;line-height:1.15;font-weight:700;}
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  button{font:inherit;cursor:pointer;}
+  ul{margin:0;padding:0;list-style:none;}
+  section{position:relative;}
+  .container{max-width:var(--container);margin:0 auto;padding:0 24px;}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-body);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);background:var(--gold-300);padding:7px 14px 7px 12px;border-radius:999px;}
+  .eyebrow.on-dark{color:var(--navy-950);background:var(--gold-400);}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.6;}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;border:1px solid transparent;font-weight:700;font-size:15px;white-space:nowrap;transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease, border-color .18s ease;}
+  .btn:active{transform:scale(.97);}
+  .btn-primary{background:var(--gold-400);color:var(--navy-950);box-shadow:0 12px 24px -10px rgba(231,200,75,.5);}
+  .btn-primary:hover{background:var(--gold-300);box-shadow:0 16px 30px -10px rgba(231,200,75,.65);}
+  .btn-ghost-dark{background:transparent;color:var(--white);border-color:rgba(255,255,255,.28);}
+  .btn-ghost-dark:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.06);}
+  .btn-block{width:100%;}
+  .btn-sm{padding:11px 18px;font-size:13.5px;}
+  .btn svg{width:18px;height:18px;flex:none;}
+
+  #progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold-400),#f1da85);width:0%;z-index:1000;transition:width .1s linear;}
+  header.site{position:sticky;top:0;z-index:900;background:rgba(247,245,251,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .25s ease, box-shadow .25s ease, background-color .25s ease;}
+  header.site.scrolled{border-color:var(--line);box-shadow:0 8px 24px -18px rgba(28,24,51,.3);background:rgba(247,245,251,.94);}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;height:82px;gap:20px;}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--ff-head);font-weight:700;font-size:22px;color:var(--navy-900);}
+  .brand .mark{width:38px;height:38px;flex:none;}
+  .brand span.accent{color:#8a6f10;margin-left:3px;}
+  nav.primary{display:flex;align-items:center;gap:2px;}
+  nav.primary a{padding:10px 15px;border-radius:999px;font-weight:600;font-size:14.5px;color:var(--navy-800);transition:background-color .18s ease,color .18s ease;}
+  nav.primary a:hover{background:var(--white);color:var(--navy-900);}
+  .header-cta{display:flex;align-items:center;gap:14px;}
+  .header-phone{display:flex;flex-direction:column;font-size:13px;color:var(--muted);text-align:right;}
+  .header-phone b{font-family:var(--ff-head);font-size:17px;font-weight:700;color:var(--navy-900);}
+  .menu-toggle{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--white);align-items:center;justify-content:center;}
+  .menu-toggle svg{width:20px;height:20px;}
+
+  .mobile-panel{position:fixed;inset:0;z-index:1200;background:var(--navy-950);display:flex;flex-direction:column;padding:24px;transform:translateY(-100%);transition:transform .3s ease;overflow-y:auto;}
+  .mobile-panel.open{transform:translateY(0);}
+  .mobile-panel .top{display:flex;justify-content:space-between;align-items:center;}
+  .mobile-panel nav{display:flex;flex-direction:column;gap:4px;margin-top:40px;}
+  .mobile-panel nav a{color:var(--white);font-family:var(--ff-head);font-size:27px;font-weight:700;padding:14px 4px;border-bottom:1px solid var(--line-dark);}
+  .mobile-panel .foot{margin-top:auto;display:flex;flex-direction:column;gap:14px;}
+  .close-btn{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:transparent;color:var(--white);display:flex;align-items:center;justify-content:center;}
+
+  .hero{background:radial-gradient(1100px 620px at 84% -10%, rgba(231,200,75,.18), transparent 60%),radial-gradient(700px 500px at 6% 18%, rgba(231,200,75,.08), transparent 60%),linear-gradient(180deg,var(--navy-950),var(--navy-900) 55%,var(--navy-900));color:var(--white);overflow:hidden;padding:88px 0 100px;}
+  .hero-inner{max-width:760px;}
+  .hero h1{font-size:clamp(36px,5vw,58px);font-weight:700;margin:22px 0 22px;}
+  .hero h1 em{font-style:normal;color:var(--gold-400);}
+  .hero p.lead{font-size:clamp(16px,1.6vw,18.5px);color:var(--muted-dark);max-width:560px;margin-bottom:34px;}
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:46px;}
+  .trust-row{display:flex;flex-wrap:wrap;gap:26px 34px;}
+  .trust-item{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--muted-dark);font-weight:600;}
+  .trust-item svg{width:18px;height:18px;color:var(--gold-400);flex:none;}
+
+  .section{padding:100px 0;}
+  section[id]{scroll-margin-top:96px;}
+  .section-head{max-width:660px;margin-bottom:56px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head h2{font-size:clamp(28px,3.6vw,40px);margin:16px 0 14px;}
+  .section-head p{color:var(--muted);font-size:16px;}
+  .on-dark .section-head p{color:var(--muted-dark);}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* O NAS */
+  .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .mission-card{background:var(--navy-900);color:var(--white);border-radius:var(--radius-lg);padding:38px 34px;}
+  .mission-card p.quote{font-family:var(--ff-head);font-size:clamp(21px,2.4vw,26px);line-height:1.4;color:var(--white);}
+  .mission-card .who{margin-top:22px;font-size:13px;color:var(--muted-dark);font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
+  .check-list{display:flex;flex-direction:column;gap:18px;}
+  .check-item{display:flex;gap:14px;align-items:flex-start;}
+  .check-item .ic{width:28px;height:28px;border-radius:50%;background:var(--gold-400);flex:none;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+  .check-item .ic svg{width:14px;height:14px;color:var(--navy-950);}
+  .check-item p{font-size:15.5px;color:var(--navy-950);font-weight:700;}
+  .check-item span{display:block;font-size:13.5px;color:var(--muted);margin-top:3px;font-weight:400;}
+
+  /* USLUGI */
+  .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .offer-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);padding:28px 24px;display:flex;flex-direction:column;gap:12px;transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;}
+  .offer-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:transparent;}
+  .offer-icon{width:50px;height:50px;border-radius:13px;background:var(--navy-900);display:flex;align-items:center;justify-content:center;}
+  .offer-icon svg{width:24px;height:24px;color:var(--gold-400);}
+  .offer-card h3{font-size:18px;font-family:var(--ff-head);font-weight:700;}
+  .offer-card p{color:var(--muted);font-size:14px;flex:1;}
+  .offer-card .link{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--navy-900);margin-top:2px;}
+  .offer-card .link svg{width:14px;height:14px;transition:transform .18s ease;}
+  .offer-card:hover .link svg{transform:translateX(3px);}
+
+  /* PROCES */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .step-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);padding:30px 24px;position:relative;}
+  .step-card .num{font-family:var(--ff-head);font-size:42px;font-weight:700;-webkit-text-stroke:1.5px var(--navy-900);color:transparent;}
+  .step-card h3{font-size:18px;margin:16px 0 8px;font-family:var(--ff-head);}
+  .step-card p{color:var(--muted);font-size:14px;}
+  .step-arrow{position:absolute;top:50%;right:-22px;transform:translateY(-50%);width:22px;height:2px;background:var(--line);display:block;}
+  .step-arrow::after{content:'';position:absolute;right:-1px;top:-4px;width:9px;height:9px;border-top:2px solid var(--line);border-right:2px solid var(--line);transform:rotate(45deg);}
+  .step-card:last-child .step-arrow{display:none;}
+
+  /* FAQ */
+  .faq-list{display:flex;flex-direction:column;gap:14px;max-width:820px;margin:0 auto;}
+  .faq-item{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;}
+  .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;font-weight:700;font-size:15.5px;color:var(--navy-900);}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .plus{width:26px;height:26px;border-radius:50%;background:var(--paper);display:flex;align-items:center;justify-content:center;flex:none;transition:transform .22s ease, background-color .22s ease;}
+  .faq-item summary .plus svg{width:13px;height:13px;color:var(--navy-900);}
+  .faq-item[open] summary .plus{transform:rotate(45deg);background:var(--gold-400);}
+  .faq-item .faq-a{padding:0 24px 22px;color:var(--muted);font-size:14.5px;line-height:1.65;}
+
+  /* CONTACT */
+  .contact-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:flex-start;}
+  .contact-info{background:var(--navy-900);color:var(--white);border-radius:var(--radius-lg);padding:36px 32px;position:sticky;top:106px;}
+  .contact-info h3{font-size:24px;margin-bottom:10px;font-family:var(--ff-head);}
+  .contact-info>p{color:var(--muted-dark);font-size:14.5px;margin-bottom:26px;}
+  .info-row{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line-dark);}
+  .info-row:first-of-type{border-top:none;}
+  .info-row .ic{width:38px;height:38px;border-radius:10px;background:rgba(231,200,75,.14);display:flex;align-items:center;justify-content:center;flex:none;}
+  .info-row .ic svg{width:18px;height:18px;color:var(--gold-400);}
+  .info-row b{display:block;font-size:14.5px;margin-bottom:2px;}
+  .info-row span, .info-row a{display:block;font-size:13.5px;color:var(--muted-dark);}
+  .info-row a:hover{color:var(--gold-400);}
+  .social-row{display:flex;gap:10px;margin-top:26px;}
+  .social-row a{width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;}
+  .social-row a:hover{background:rgba(255,255,255,.08);}
+  .social-row svg{width:17px;height:17px;}
+
+  .form-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:38px;box-shadow:var(--shadow-md);}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px;}
+  .field.full{grid-column:1 / -1;}
+  .field label{font-size:13px;font-weight:700;color:var(--navy-800);}
+  .field label .opt{font-weight:400;color:var(--muted);}
+  .field input[type=text],.field input[type=email],.field input[type=tel],.field select,.field textarea{border:1px solid var(--line);border-radius:12px;padding:13px 14px;font:inherit;font-size:14.5px;color:var(--ink);background:var(--paper);transition:border-color .18s ease, box-shadow .18s ease;width:100%;}
+  .field textarea{resize:vertical;min-height:110px;}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy-700);box-shadow:0 0 0 4px rgba(69,58,112,.1);background:var(--white);}
+  .field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236a6284' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:16px;padding-right:38px;}
+
+  .dropzone{border:1.5px dashed var(--line);border-radius:14px;padding:22px;text-align:center;background:var(--paper);display:flex;flex-direction:column;align-items:center;gap:8px;transition:border-color .18s ease, background-color .18s ease;cursor:pointer;}
+  .dropzone.drag{border-color:var(--navy-800);background:#efecf7;}
+  .dropzone svg{width:26px;height:26px;color:var(--muted);}
+  .dropzone b{font-size:13.5px;}
+  .dropzone span{font-size:12px;color:var(--muted);}
+  #file-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+  .file-chip{display:flex;align-items:center;gap:6px;background:var(--navy-900);color:var(--white);font-size:12px;font-weight:600;padding:6px 8px 6px 10px;border-radius:999px;}
+  .file-chip button{background:none;border:none;color:var(--muted-dark);width:16px;height:16px;display:flex;align-items:center;justify-content:center;padding:0;}
+  .file-chip button:hover{color:#fff;}
+
+  .consent-row{display:flex;gap:12px;align-items:flex-start;margin:6px 0 24px;}
+  .consent-row input{margin-top:3px;width:17px;height:17px;accent-color:var(--navy-900);flex:none;}
+  .consent-row label{font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .form-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+  .response-hint{font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:7px;}
+  .response-hint svg{width:15px;height:15px;color:#3f8f4a;flex:none;}
+  .form-success{display:none;align-items:center;gap:14px;background:#f3edf9;border:1px solid #ddd1ef;color:#2d2251;border-radius:14px;padding:16px 18px;font-size:14px;font-weight:600;margin-top:18px;}
+  .form-success.show{display:flex;}
+  .form-success svg{width:20px;height:20px;flex:none;}
+
+  .cta-band{background:linear-gradient(120deg,var(--navy-950),var(--navy-800));border-radius:var(--radius-lg);padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;color:var(--white);}
+  .cta-band h2{font-size:clamp(22px,3vw,30px);max-width:480px;}
+  .cta-band p{color:var(--muted-dark);margin-top:10px;font-size:14.5px;}
+
+  footer{background:var(--navy-950);color:var(--muted-dark);padding:72px 0 28px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:48px;border-bottom:1px solid var(--line-dark);}
+  .footer-brand .brand{color:var(--white);margin-bottom:14px;}
+  .footer-grid p.desc{font-size:13.5px;line-height:1.7;max-width:280px;}
+  .footer-col h4{color:var(--white);font-size:13px;margin-bottom:16px;letter-spacing:.04em;text-transform:uppercase;font-family:var(--ff-body);}
+  .footer-col ul{display:flex;flex-direction:column;gap:11px;}
+  .footer-col a{font-size:13.5px;transition:color .15s ease;}
+  .footer-col a:hover{color:var(--gold-400);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-size:12.5px;flex-wrap:wrap;gap:12px;}
+  .footer-bottom .legal a{margin-left:18px;}
+  .back-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;background:var(--navy-900);color:var(--gold-400);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .25s ease, transform .25s ease;z-index:500;border:none;}
+  .back-top.show{opacity:1;pointer-events:auto;transform:none;}
+  .back-top svg{width:20px;height:20px;}
+
+  @media (max-width:1024px){
+    .about-wrap{grid-template-columns:1fr;}
+    .contact-wrap{grid-template-columns:1fr;}
+    .contact-info{position:static;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .steps{grid-template-columns:repeat(2,1fr);}
+    .step-arrow{display:none;}
+  }
+  @media (max-width:860px){
+    nav.primary,.header-phone{display:none;}
+    .header-cta .btn{display:none;}
+    .menu-toggle{display:flex;}
+    .offer-grid{grid-template-columns:1fr;}
+    .section{padding:64px 0;}
+    .form-grid{grid-template-columns:1fr;}
+    .cta-band{flex-direction:column;align-items:flex-start;}
+  }
+  @media (max-width:520px){
+    .container{padding:0 18px;}
+    .hero{padding:52px 0 64px;}
+    .footer-grid{grid-template-columns:1fr;gap:32px;}
+    .steps{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header class="site" id="site-header">
+  <div class="container nav-row">
+    <a href="#top" class="brand">
+      <svg aria-hidden="true" focusable="false" class="mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#2D274D"/><path d="M14 42 L24 30 L32 36 L48 16" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 16 H48 V24" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>DE <span class="accent">FUTURUM</span></span>
+    </a>
+    <nav class="primary">
+      <a href="#o-nas">O Nas</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#proces">Proces</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="header-cta">
+      <div class="header-phone">
+        <span>Zadzwoń do nas</span>
+        <b>538 100 006</b>
+      </div>
+      <a href="#kontakt" class="btn btn-primary btn-sm">Bezpłatna konsultacja</a>
+      <button class="menu-toggle" id="menu-open" aria-label="Otwórz menu">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobile-panel">
+  <div class="top">
+    <a href="#top" class="brand" style="color:#fff;">
+      <svg aria-hidden="true" focusable="false" class="mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#382f5c"/><path d="M14 42 L24 30 L32 36 L48 16" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 16 H48 V24" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      DE FUTURUM
+    </a>
+    <button class="close-btn" id="menu-close" aria-label="Zamknij menu">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="#o-nas">O Nas</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#proces">Proces</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <div class="foot">
+    <a href="tel:+48538100006" class="btn btn-ghost-dark btn-block">538 100 006</a>
+    <a href="#kontakt" class="btn btn-primary btn-block">Bezpłatna konsultacja</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="eyebrow on-dark"><span class="dot"></span>Doradztwo kredytowe i finansowe</span>
+        <h1>Kredyt szybciej, łatwiej <br><em>i bez stresu</em>.</h1>
+        <p class="lead">Wspieramy klientów indywidualnych i firmy w uzyskaniu finansowania — analizujemy sytuację, porównujemy oferty banków, prywatnych inwestorów i instytucji pozabankowych, i prowadzimy Cię krok po kroku aż do podpisania umowy.</p>
+        <div class="cta-row">
+          <a href="#kontakt" class="btn btn-primary">
+            Umów bezpłatną konsultację
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#uslugi" class="btn btn-ghost-dark">Zobacz usługi</a>
+        </div>
+        <div class="trust-row">
+          <div class="trust-item"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Współpraca z bankami w całej Polsce</div>
+          <div class="trust-item"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Działamy zgodnie z regulacjami KNF</div>
+          <div class="trust-item"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Konsultacja bezpłatna i niezobowiązująca</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O NAS -->
+  <section class="section" id="o-nas" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">O nas</span>
+        <h2>Rzetelne wsparcie w trudnych i nietypowych sytuacjach finansowych</h2>
+        <p>DE FUTURUM tworzą doświadczeni doradcy finansowi, prawnicy i specjaliści kredytowi. Pomagamy osobom prywatnym, przedsiębiorcom i firmom znaleźć wyjście z sytuacji, w których standardowa oferta bankowa zawodzi.</p>
+      </div>
+      <div class="about-wrap">
+        <div class="mission-card reveal">
+          <p class="quote">„Wierzymy, że nawet najtrudniejsza sytuacja finansowa może mieć rozwiązanie.”</p>
+          <div class="who">Misja DE FUTURUM</div>
+        </div>
+        <div class="check-list reveal">
+          <div class="check-item">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <p>Transparentność<span>Brak ukrytych kosztów i niejasnych warunków — wiesz, na czym stoisz, od pierwszej rozmowy.</span></p>
+          </div>
+          <div class="check-item">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <p>Indywidualne podejście<span>Każdą sprawę analizujemy osobno, dopasowując rozwiązanie do realnej sytuacji klienta.</span></p>
+          </div>
+          <div class="check-item">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <p>Empatia<span>Nie oceniamy — pomagamy. Rozumiemy, że za każdą sprawą stoi konkretny człowiek lub firma.</span></p>
+          </div>
+          <div class="check-item">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <p>Edukacja finansowa<span>Dokładnie wyjaśniamy każdą procedurę, żebyś podejmował decyzje świadomie.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USLUGI -->
+  <section class="section" id="uslugi">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Nasza oferta</span>
+        <h2>Finansowanie dopasowane do Twojej sytuacji</h2>
+        <p>Od szybkiej gotówki po uporządkowanie historii kredytowej — kompleksowe wsparcie w jednym miejscu.</p>
+      </div>
+      <div class="offer-grid">
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 6V4h12v2"/></svg></div>
+          <h3>Kredyt gotówkowy</h3>
+          <p>Minimum formalności, maksymalna wygoda — szybki dostęp do gotówki na dowolny cel.</p>
+          <a href="#kontakt" class="link" data-topic="Kredyt gotówkowy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg></div>
+          <h3>Kredyt firmowy</h3>
+          <p>Rozwijaj firmę bez ograniczeń — finansowanie dla przedsiębiorców na korzystnych warunkach.</p>
+          <a href="#kontakt" class="link" data-topic="Kredyt firmowy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+          <h3>Kredyt pozabankowy</h3>
+          <p>Szybka decyzja i elastyczne warunki — uproszczone procedury i szybsza ocena wniosku.</p>
+          <a href="#kontakt" class="link" data-topic="Kredyt pozabankowy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="10" r="3"/><path d="M2 20c0-3 2.5-5 6-5s6 2 6 5"/><path d="M13 20c.5-2.5 2-4 4-4s3.5 1 4 3"/></svg></div>
+          <h3>Prywatni inwestorzy</h3>
+          <p>Indywidualne finansowanie od prywatnych inwestorów — elastyczne formy dopasowane do potrzeb.</p>
+          <a href="#kontakt" class="link" data-topic="Prywatni inwestorzy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div>
+          <h3>Kredyt hipoteczny</h3>
+          <p>Długoterminowe finansowanie zabezpieczone hipoteką — zakup, budowa lub refinansowanie nieruchomości.</p>
+          <a href="#kontakt" class="link" data-topic="Kredyt hipoteczny">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="14" height="7" rx="1"/><circle cx="7.5" cy="18.5" r="1.8"/><circle cx="15.5" cy="18.5" r="1.8"/><path d="M17 10l3 3v4h-3"/></svg></div>
+          <h3>Leasingi</h3>
+          <p>Wygodna forma finansowania dla firm — leasing operacyjny i finansowy pojazdów oraz sprzętu.</p>
+          <a href="#kontakt" class="link" data-topic="Leasingi">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="14" width="4" height="4" rx="1"/></svg></div>
+          <h3>Pożyczka pod zastaw nieruchomości</h3>
+          <p>Bezpieczne finansowanie z szybkim dostępem do środków, zabezpieczone Twoją nieruchomością.</p>
+          <a href="#kontakt" class="link" data-topic="Pożyczka pod zastaw nieruchomości">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/><path d="M9 13h6M9 17h6"/></svg></div>
+          <h3>Spłata zaległości publicznych</h3>
+          <p>Wsparcie w regulowaniu zobowiązań wobec ZUS, US, KRD i podobnych instytucji.</p>
+          <a href="#kontakt" class="link" data-topic="Spłata zaległości publicznych">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v6h6"/><path d="M20 20v-6h-6"/><path d="M20 10a8 8 0 0 0-14.9-4"/><path d="M4 14a8 8 0 0 0 14.9 4"/></svg></div>
+          <h3>Leasing zwrotny</h3>
+          <p>Odzyskaj zamrożone środki z posiadanego majątku, zachowując możliwość jego dalszego użytkowania.</p>
+          <a href="#kontakt" class="link" data-topic="Leasing zwrotny">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Czyszczenie baz kredytowych</h3>
+          <p>Poprawa historii kredytowej poprzez weryfikację i usunięcie nieaktualnych wpisów z BIK, BIG, ERIF.</p>
+          <a href="#kontakt" class="link" data-topic="Czyszczenie baz kredytowych">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="offer-card reveal">
+          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M6.5 6.5l3 3M17.5 6.5l-3 3M6.5 17.5l3-3M17.5 17.5l-3-3"/></svg></div>
+          <h3>Pomoc w spłacie kredytów pozabankowych</h3>
+          <p>Rozwiązania, które pomagają uporządkować istniejące zadłużenie pozabankowe.</p>
+          <a href="#kontakt" class="link" data-topic="Pomoc w spłacie kredytów pozabankowych">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="section on-dark" id="proces" style="background:linear-gradient(180deg,var(--navy-900),var(--navy-950));color:#fff;">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow on-dark"><span class="dot"></span>Jak działamy</span>
+        <h2>Cztery kroki do finansowania</h2>
+        <p>Prosty, przejrzysty proces — od pierwszej rozmowy do wypłaty środków.</p>
+      </div>
+      <div class="steps">
+        <div class="step-card reveal">
+          <span class="num">01</span>
+          <h3>Bezpłatna konsultacja</h3>
+          <p>Rozmawiamy o Twojej sytuacji i celu — bez zobowiązań i bez opłat wstępnych.</p>
+          <span class="step-arrow"></span>
+        </div>
+        <div class="step-card reveal">
+          <span class="num">02</span>
+          <h3>Analiza sytuacji finansowej</h3>
+          <p>Sprawdzamy możliwości i ograniczenia, w tym historię w BIK, BIG i ERIF.</p>
+          <span class="step-arrow"></span>
+        </div>
+        <div class="step-card reveal">
+          <span class="num">03</span>
+          <h3>Dobór oferty</h3>
+          <p>Porównujemy oferty banków, prywatnych inwestorów i instytucji pozabankowych.</p>
+          <span class="step-arrow"></span>
+        </div>
+        <div class="step-card reveal">
+          <span class="num">04</span>
+          <h3>Umowa i wypłata środków</h3>
+          <p>Prowadzimy Cię przez formalności aż do podpisania umowy i uruchomienia finansowania.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Pytania i odpowiedzi</span>
+        <h2>Najczęściej zadawane pytania</h2>
+        <p>Nie znalazłeś odpowiedzi? Napisz do nas — chętnie wyjaśnimy wszystkie wątpliwości.</p>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>Czy pomagacie zarówno osobom prywatnym, jak i firmom?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Tak. Wspieramy zarówno klientów indywidualnych, jak i przedsiębiorców — analizujemy potrzeby i dobieramy możliwe formy finansowania z różnych źródeł.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy doradztwo wiąże się z opłatami z góry?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Nie. Konsultacja wstępna oraz analiza sytuacji finansowej są bezpłatne. O wszelkich możliwych kosztach informujemy z wyprzedzeniem.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Jak długo trwa proces uzyskania finansowania?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Czas zależy od rodzaju finansowania i sytuacji klienta — niektóre procesy trwają 1–3 dni robocze, inne do kilku tygodni.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy mogę skonsultować się bezpłatnie?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Tak, wstępna konsultacja jest bezpłatna i niezobowiązująca — możesz spokojnie omówić swoją sytuację.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy współpracujecie tylko z bankami?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Nie — współpracujemy również z prywatnymi inwestorami i instytucjami pozabankowymi, aby dobrać ofertę najlepiej dopasowaną do potrzeb klienta.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy mogę skorzystać z pożyczki pod zastaw nieruchomości?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Tak. Wspieramy w pozyskaniu prywatnych pożyczek pod zastaw nieruchomości, z elastycznym okresem spłaty i minimalną liczbą formalności.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Jak działa usługa czyszczenia BIK i innych rejestrów?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Weryfikujemy raporty BIK, ERIF i KRD w celu usunięcia lub korekty nieaktualnych bądź błędnych wpisów, co może poprawić Twoją ocenę kredytową.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy mogę otrzymać ofertę bez wychodzenia z domu?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Oczywiście. Analizę i proces wnioskowania można przeprowadzić zdalnie — wystarczy kontakt mailowy, telefoniczny lub przez formularz.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy mogę refinansować istniejący kredyt?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="faq-a">Tak — oferujemy usługi konsolidacji i refinansowania, dzięki którym można połączyć kilka zobowiązań w jedno, lepiej dopasowane finansowanie.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Kontakt</span>
+        <h2>Porozmawiajmy o Twoich finansach</h2>
+        <p>Wypełnij formularz lub zadzwoń — odezwiemy się i wspólnie znajdziemy rozwiązanie.</p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-info reveal">
+          <h3>DE FUTURUM</h3>
+          <p>Doradztwo finansowe z ludzką twarzą — nie oceniamy, pomagamy znaleźć wyjście z każdej sytuacji.</p>
+
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><b>Adres</b><span>Aleja Jana Pawła II 43A/37b, Warszawa</span></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.5 2L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><b>Telefon</b><a href="tel:+48538100006">538 100 006</a></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><b>E-mail</b><a href="mailto:kontakt@defuturum.com">kontakt@defuturum.com</a></div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z"/></svg></a>
+          </div>
+        </div>
+
+        <form class="form-card reveal" id="contact-form" novalidate>
+          <input type="text" name="website" id="website" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
+          <div class="form-grid">
+            <div class="field full">
+              <label for="topic">Temat zapytania</label>
+              <select id="topic" name="topic">
+                <option>Kredyt gotówkowy</option>
+                <option>Kredyt firmowy</option>
+                <option>Kredyt pozabankowy</option>
+                <option>Prywatni inwestorzy</option>
+                <option>Kredyt hipoteczny</option>
+                <option>Leasingi</option>
+                <option>Pożyczka pod zastaw nieruchomości</option>
+                <option>Spłata zaległości publicznych</option>
+                <option>Leasing zwrotny</option>
+                <option>Czyszczenie baz kredytowych</option>
+                <option>Pomoc w spłacie kredytów pozabankowych</option>
+                <option>Inne</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="first-name">Imię</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Jan" required />
+            </div>
+            <div class="field">
+              <label for="last-name">Nazwisko</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Kowalski" required />
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="jan.kowalski@email.pl" required />
+            </div>
+            <div class="field">
+              <label for="phone">Numer telefonu</label>
+              <input type="tel" id="phone" name="phone" placeholder="+48 600 000 000" required />
+            </div>
+            <div class="field full">
+              <label for="message">Wiadomość</label>
+              <textarea id="message" name="message" placeholder="Opisz krótko swoją sytuację i czego potrzebujesz..."></textarea>
+            </div>
+            <div class="field full">
+              <label>Załączniki <span class="opt">(np. zaświadczenie o dochodach, opcjonalnie)</span></label>
+              <div class="dropzone" id="dropzone">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+                <b>Przeciągnij pliki tutaj lub kliknij, aby wybrać</b>
+                <span>PDF, JPG, PNG — maks. 5 plików, łącznie do 8&nbsp;MB</span>
+                <input type="file" id="file-input" multiple hidden accept=".pdf,.jpg,.jpeg,.png" />
+              </div>
+              <div id="file-list"></div>
+            </div>
+          </div>
+
+          <div class="consent-row">
+            <input type="checkbox" id="consent" required />
+            <label for="consent">Wyrażam zgodę na przetwarzanie moich danych osobowych przez DE FUTURUM w celu obsługi zapytania, zgodnie z Polityką prywatności.</label>
+          </div>
+
+          <div class="form-foot">
+            <button type="submit" class="btn btn-primary">
+              Wyślij zapytanie
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <span class="response-hint"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Odpowiadamy najszybciej, jak to możliwe</span>
+          </div>
+
+          <div class="form-success" id="form-success">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            <span>Dziękujemy! Twoje zgłoszenie zostało wysłane. Odezwiemy się najszybciej, jak to możliwe.</span>
+          </div>
+          <div class="form-success" id="form-error" style="background:#fdecec;border-color:#f3c6c6;color:#7a1f1f;">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+            <span id="form-error-text">Nie udało się wysłać formularza. Spróbuj ponownie lub zadzwoń do nas.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Gotowy, żeby uporządkować swoje finanse?</h2>
+          <p>Bez zobowiązań, bez opłat wstępnych — porozmawiajmy o możliwościach.</p>
+        </div>
+        <a href="#kontakt" class="btn btn-primary">Napisz do nas teraz</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <svg aria-hidden="true" focusable="false" class="mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#382f5c"/><path d="M14 42 L24 30 L32 36 L48 16" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 16 H48 V24" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          DE FUTURUM
+        </a>
+        <p class="desc">Doradztwo kredytowe i finansowe — współpracujemy z bankami, prywatnymi inwestorami i instytucjami pozabankowymi w całej Polsce, zgodnie z regulacjami KNF.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="#o-nas">O Nas</a></li>
+          <li><a href="#uslugi">Usługi</a></li>
+          <li><a href="#proces">Proces</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Usługi</h4>
+        <ul>
+          <li><a href="#uslugi">Kredyty gotówkowe i firmowe</a></li>
+          <li><a href="#uslugi">Kredyt hipoteczny</a></li>
+          <li><a href="#uslugi">Leasingi</a></li>
+          <li><a href="#uslugi">Czyszczenie BIK</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Aleja Jana Pawła II 43A/37b, Warszawa</li>
+          <li><a href="tel:+48538100006">538 100 006</a></li>
+          <li><a href="mailto:kontakt@defuturum.com">kontakt@defuturum.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> DE FUTURUM. Wszelkie prawa zastrzeżone.</span>
+      <span class="legal"><a href="#">Polityka prywatności</a><a href="#">Regulamin</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="back-top" aria-label="Wróć na górę">
+  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var header = document.getElementById('site-header');
+  var progress = document.getElementById('progress');
+  var backTop = document.getElementById('back-top');
+  function onScroll(){
+    var y = window.scrollY || document.documentElement.scrollTop;
+    header.classList.toggle('scrolled', y > 12);
+    backTop.classList.toggle('show', y > 500);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+  }
+  document.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  var panel = document.getElementById('mobile-panel');
+  document.getElementById('menu-open').addEventListener('click', function(){ panel.classList.add('open'); document.body.style.overflow='hidden'; });
+  document.getElementById('menu-close').addEventListener('click', closePanel);
+  panel.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closePanel); });
+  function closePanel(){ panel.classList.remove('open'); document.body.style.overflow=''; }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    var id = a.getAttribute('href').slice(1);
+    var target = id && document.getElementById(id);
+    if(!target) return;
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  document.querySelectorAll('a[data-topic]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var sel = document.getElementById('topic');
+      var val = a.getAttribute('data-topic');
+      for(var i=0;i<sel.options.length;i++){
+        if(sel.options[i].text.indexOf(val) !== -1){ sel.selectedIndex = i; break; }
+      }
+    });
+  });
+
+  var dropzone = document.getElementById('dropzone');
+  var fileInput = document.getElementById('file-input');
+  var fileList = document.getElementById('file-list');
+  var files = [];
+  var MAX_FILES = 5;
+  var MAX_TOTAL_BYTES = 8 * 1024 * 1024;
+
+  dropzone.addEventListener('click', function(){ fileInput.click(); });
+  dropzone.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ fileInput.click(); } });
+  dropzone.setAttribute('tabindex','0');
+  dropzone.setAttribute('role','button');
+
+  ['dragenter','dragover'].forEach(function(evt){
+    dropzone.addEventListener(evt, function(e){ e.preventDefault(); dropzone.classList.add('drag'); });
+  });
+  ['dragleave','drop'].forEach(function(evt){
+    dropzone.addEventListener(evt, function(e){ e.preventDefault(); dropzone.classList.remove('drag'); });
+  });
+  dropzone.addEventListener('drop', function(e){
+    addFiles(e.dataTransfer.files);
+  });
+  fileInput.addEventListener('change', function(){ addFiles(fileInput.files); fileInput.value = ''; });
+
+  function addFiles(list){
+    Array.prototype.forEach.call(list, function(f){ files.push(f); });
+    if(files.length > MAX_FILES){
+      alert('Możesz dołączyć maksymalnie ' + MAX_FILES + ' plików.');
+      files = files.slice(0, MAX_FILES);
+    }
+    var total = files.reduce(function(sum, f){ return sum + f.size; }, 0);
+    if(total > MAX_TOTAL_BYTES){
+      alert('Łączny rozmiar załączników przekracza 8 MB. Usuń niektóre pliki.');
+      while(files.length && files.reduce(function(sum, f){ return sum + f.size; }, 0) > MAX_TOTAL_BYTES){
+        files.pop();
+      }
+    }
+    renderFiles();
+  }
+  function renderFiles(){
+    fileList.innerHTML = '';
+    files.forEach(function(f, idx){
+      var chip = document.createElement('div');
+      chip.className = 'file-chip';
+      var name = f.name.length > 22 ? f.name.slice(0,19) + '…' : f.name;
+      chip.innerHTML = '<span>' + name + '</span>';
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.setAttribute('aria-label','Usuń plik');
+      btn.innerHTML = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+      btn.addEventListener('click', function(){
+        var i = Array.prototype.indexOf.call(fileList.children, chip);
+        if(i > -1) files.splice(i,1);
+        renderFiles();
+      });
+      chip.appendChild(btn);
+      fileList.appendChild(chip);
+    });
+  }
+
+  var form = document.getElementById('contact-form');
+  var success = document.getElementById('form-success');
+  var errorBox = document.getElementById('form-error');
+  var submitBtn = form.querySelector('button[type="submit"]');
+  var submitBtnHTML = submitBtn.innerHTML;
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+
+    success.classList.remove('show');
+    errorBox.classList.remove('show');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Wysyłanie…';
+
+    var fd = new FormData(form);
+    files.forEach(function(f){ fd.append('attachment', f); });
+
+    fetch('/api/contact', { method: 'POST', body: fd })
+      .then(function(res){
+        return res.json().catch(function(){ return {}; }).then(function(data){
+          return { ok: res.ok && data.ok, data: data };
+        });
+      })
+      .then(function(result){
+        if(!result.ok){ throw new Error((result.data && result.data.error) || 'send_failed'); }
+        success.classList.add('show');
+        success.scrollIntoView({behavior:'smooth', block:'center'});
+        form.reset();
+        files = [];
+        renderFiles();
+      })
+      .catch(function(){
+        errorBox.classList.add('show');
+        errorBox.scrollIntoView({behavior:'smooth', block:'center'});
+      })
+      .finally(function(){
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = submitBtnHTML;
+      });
+  });
+
+})();
+</script>
+
+</body>
+</html>
