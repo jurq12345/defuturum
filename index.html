@@ -13,11 +13,12 @@
 <meta property="og:url" content="https://defuturum.com/" />
 <meta property="og:site_name" content="DE FUTURUM" />
 <meta property="og:locale" content="pl_PL" />
+<meta property="og:image" content="https://defuturum.com/wp-content/uploads/2025/06/logo2.png" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="DE FUTURUM — Kredyt szybciej, łatwiej i bez stresu" />
 <meta name="twitter:description" content="Doradztwo finansowe i pośrednictwo kredytowe — kredyty, leasing, pożyczki pod zastaw nieruchomości i czyszczenie baz kredytowych." />
 <link rel="canonical" href="https://defuturum.com/" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232D274D'/%3E%3Cpath d='M14 42 L24 30 L32 36 L48 16' stroke='%23E7C84B' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40 16 H48 V24' stroke='%23E7C84B' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="https://defuturum.com/wp-content/uploads/2025/06/logo-witryny.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -26,13 +27,15 @@
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "name": "DE FUTURUM",
+  "image": "https://defuturum.com/wp-content/uploads/2025/06/logo2.png",
+  "logo": "https://defuturum.com/wp-content/uploads/2025/06/logo2.png",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Aleja Jana Pawła II 43A/37b",
     "addressLocality": "Warszawa",
     "addressCountry": "PL"
   },
-  "telephone": "+48538100006",
+  "telephone": ["+48538100006", "+48728877775"],
   "email": "kontakt@defuturum.com",
   "url": "https://defuturum.com"
 }
@@ -77,9 +80,10 @@
   ul{margin:0;padding:0;list-style:none;}
   section{position:relative;}
   .container{max-width:var(--container);margin:0 auto;padding:0 24px;}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-body);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);background:var(--gold-300);padding:7px 14px 7px 12px;border-radius:999px;}
-  .eyebrow.on-dark{color:var(--navy-950);background:var(--gold-400);}
-  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.6;}
+  .eyebrow{display:flex;align-items:center;gap:10px;font-family:var(--ff-body);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8a6f10;}
+  .eyebrow::before{content:'';width:22px;height:1px;background:currentColor;display:inline-block;}
+  .eyebrow.on-dark{color:var(--gold-300);}
+  .section-head.center .eyebrow{justify-content:center;}
 
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;border:1px solid transparent;font-weight:700;font-size:15px;white-space:nowrap;transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease, border-color .18s ease;}
   .btn:active{transform:scale(.97);}
@@ -95,15 +99,14 @@
   header.site{position:sticky;top:0;z-index:900;background:rgba(247,245,251,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .25s ease, box-shadow .25s ease, background-color .25s ease;}
   header.site.scrolled{border-color:var(--line);box-shadow:0 8px 24px -18px rgba(28,24,51,.3);background:rgba(247,245,251,.94);}
   .nav-row{display:flex;align-items:center;justify-content:space-between;height:82px;gap:20px;}
-  .brand{display:flex;align-items:center;gap:11px;font-family:var(--ff-head);font-weight:700;font-size:22px;color:var(--navy-900);}
-  .brand .mark{width:38px;height:38px;flex:none;}
-  .brand span.accent{color:#8a6f10;margin-left:3px;}
+  .brand{display:flex;align-items:center;}
+  .brand .mark{height:30px;width:auto;flex:none;object-fit:contain;}
   nav.primary{display:flex;align-items:center;gap:2px;}
-  nav.primary a{padding:10px 15px;border-radius:999px;font-weight:600;font-size:14.5px;color:var(--navy-800);transition:background-color .18s ease,color .18s ease;}
-  nav.primary a:hover{background:var(--white);color:var(--navy-900);}
+  nav.primary a{padding:10px 5px;margin:0 9px;border-radius:0;font-weight:600;font-size:14.5px;color:var(--navy-800);position:relative;transition:color .18s ease;}
+  nav.primary a::after{content:'';position:absolute;left:5px;right:5px;bottom:2px;height:2px;background:var(--gold-400);transform:scaleX(0);transform-origin:left;transition:transform .2s ease;}
+  nav.primary a:hover{color:var(--navy-950);}
+  nav.primary a:hover::after{transform:scaleX(1);}
   .header-cta{display:flex;align-items:center;gap:14px;}
-  .header-phone{display:flex;flex-direction:column;font-size:13px;color:var(--muted);text-align:right;}
-  .header-phone b{font-family:var(--ff-head);font-size:17px;font-weight:700;color:var(--navy-900);}
   .menu-toggle{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--white);align-items:center;justify-content:center;}
   .menu-toggle svg{width:20px;height:20px;}
 
@@ -115,15 +118,27 @@
   .mobile-panel .foot{margin-top:auto;display:flex;flex-direction:column;gap:14px;}
   .close-btn{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:transparent;color:var(--white);display:flex;align-items:center;justify-content:center;}
 
-  .hero{background:radial-gradient(1100px 620px at 84% -10%, rgba(231,200,75,.18), transparent 60%),radial-gradient(700px 500px at 6% 18%, rgba(231,200,75,.08), transparent 60%),linear-gradient(180deg,var(--navy-950),var(--navy-900) 55%,var(--navy-900));color:var(--white);overflow:hidden;padding:88px 0 100px;}
-  .hero-inner{max-width:760px;}
-  .hero h1{font-size:clamp(36px,5vw,58px);font-weight:700;margin:22px 0 22px;}
+  .hero{background:var(--navy-950);color:var(--white);overflow:hidden;position:relative;border-bottom:1px solid var(--line-dark);}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:0;min-height:560px;}
+  .hero-copy{padding:70px 0 64px;display:flex;flex-direction:column;justify-content:center;}
+  .kicker{display:flex;align-items:center;gap:10px;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-300);}
+  .kicker .kicker-line{width:26px;height:1px;background:var(--gold-400);display:inline-block;flex:none;}
+  .hero h1{font-size:clamp(34px,4.6vw,54px);font-weight:700;margin:22px 0 20px;max-width:14ch;}
   .hero h1 em{font-style:normal;color:var(--gold-400);}
-  .hero p.lead{font-size:clamp(16px,1.6vw,18.5px);color:var(--muted-dark);max-width:560px;margin-bottom:34px;}
-  .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:46px;}
-  .trust-row{display:flex;flex-wrap:wrap;gap:26px 34px;}
-  .trust-item{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--muted-dark);font-weight:600;}
-  .trust-item svg{width:18px;height:18px;color:var(--gold-400);flex:none;}
+  .hero p.lead{font-size:clamp(16px,1.4vw,17.5px);color:var(--muted-dark);max-width:460px;margin-bottom:32px;}
+  .hero .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px;margin-bottom:36px;}
+  .hero .text-link{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--white);padding:15px 2px;border-bottom:1px solid rgba(255,255,255,.3);}
+  .hero .text-link:hover{border-color:var(--gold-400);color:var(--gold-300);}
+  .hero .text-link svg{width:16px;height:16px;}
+  .hero-facts{display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid var(--line-dark);max-width:460px;}
+  .hero-facts .fact{display:flex;gap:12px;font-size:13.5px;color:var(--muted-dark);}
+  .hero-facts .fact svg{width:17px;height:17px;color:var(--gold-400);flex:none;margin-top:1px;}
+
+  .hero-panel{position:relative;border-left:1px solid var(--line-dark);display:flex;align-items:center;padding:56px 0;}
+  .hero-panel-list{width:100%;}
+  .hero-panel-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:15px 44px;border-top:1px solid var(--line-dark);font-size:14px;color:var(--muted-dark);}
+  .hero-panel-row:first-child{border-top:none;}
+  .hero-panel-row b{font-family:var(--ff-head);font-weight:700;font-size:16.5px;color:var(--white);}
 
   .section{padding:100px 0;}
   section[id]{scroll-margin-top:96px;}
@@ -138,42 +153,47 @@
 
   /* O NAS */
   .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
-  .mission-card{background:var(--navy-900);color:var(--white);border-radius:var(--radius-lg);padding:38px 34px;}
+  .mission-card{background:var(--navy-900);color:var(--white);border-radius:var(--radius-lg);padding:38px 34px;position:relative;border-top:3px solid var(--gold-400);}
   .mission-card p.quote{font-family:var(--ff-head);font-size:clamp(21px,2.4vw,26px);line-height:1.4;color:var(--white);}
-  .mission-card .who{margin-top:22px;font-size:13px;color:var(--muted-dark);font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
-  .check-list{display:flex;flex-direction:column;gap:18px;}
-  .check-item{display:flex;gap:14px;align-items:flex-start;}
-  .check-item .ic{width:28px;height:28px;border-radius:50%;background:var(--gold-400);flex:none;display:flex;align-items:center;justify-content:center;margin-top:2px;}
-  .check-item .ic svg{width:14px;height:14px;color:var(--navy-950);}
-  .check-item p{font-size:15.5px;color:var(--navy-950);font-weight:700;}
-  .check-item span{display:block;font-size:13.5px;color:var(--muted);margin-top:3px;font-weight:400;}
+  .mission-card .rule{width:44px;height:3px;background:var(--gold-400);border-radius:3px;margin-top:24px;}
+  .mission-card .who{margin-top:14px;font-size:13px;color:var(--muted-dark);font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
+
+  .value-list{display:flex;flex-direction:column;}
+  .value-row{display:flex;gap:16px;padding:20px 0 20px 16px;border-top:1px solid var(--line);position:relative;transition:padding-left .2s ease;}
+  .value-row:first-child{border-top:none;}
+  .value-row::before{content:'';position:absolute;left:0;top:20px;bottom:20px;width:2px;background:transparent;transition:background-color .2s ease;}
+  .value-row:hover{padding-left:22px;}
+  .value-row:hover::before{background:var(--gold-400);}
+  .value-num{font-family:var(--ff-head);font-weight:700;font-size:26px;color:transparent;-webkit-text-stroke:1.2px var(--navy-800);flex:none;width:34px;line-height:1;padding-top:2px;}
+  .value-row h4{font-family:var(--ff-head);font-size:17.5px;font-weight:700;color:var(--navy-950);margin-bottom:4px;}
+  .value-row p{font-size:13.5px;color:var(--muted);}
 
   /* USLUGI */
-  .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .offer-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);padding:28px 24px;display:flex;flex-direction:column;gap:12px;transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;}
-  .offer-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:transparent;}
-  .offer-icon{width:50px;height:50px;border-radius:13px;background:var(--navy-900);display:flex;align-items:center;justify-content:center;}
-  .offer-icon svg{width:24px;height:24px;color:var(--gold-400);}
-  .offer-card h3{font-size:18px;font-family:var(--ff-head);font-weight:700;}
-  .offer-card p{color:var(--muted);font-size:14px;flex:1;}
-  .offer-card .link{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--navy-900);margin-top:2px;}
-  .offer-card .link svg{width:14px;height:14px;transition:transform .18s ease;}
-  .offer-card:hover .link svg{transform:translateX(3px);}
+  .service-list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;}
+  .service-col{display:flex;flex-direction:column;}
+  .service-row{display:flex;align-items:flex-start;gap:18px;padding:24px 2px;border-top:1px solid var(--line);transition:padding-left .2s ease;}
+  .service-col .service-row:first-child{border-top:none;}
+  .service-row:hover{padding-left:8px;}
+  .service-num{font-family:var(--ff-head);font-size:32px;font-weight:700;color:transparent;-webkit-text-stroke:1.3px var(--navy-800);flex:none;width:44px;line-height:1;padding-top:2px;}
+  .service-body{flex:1;}
+  .service-body h3{font-size:17.5px;font-family:var(--ff-head);font-weight:700;}
+  .service-body p{color:var(--muted);font-size:13.5px;margin-top:6px;}
+  .service-arrow{width:36px;height:36px;border-radius:50%;background:var(--paper);display:flex;align-items:center;justify-content:center;flex:none;margin-top:2px;transition:background-color .2s ease, transform .2s ease;}
+  .service-arrow svg{width:15px;height:15px;color:var(--navy-900);transition:transform .18s ease;}
+  .service-row:hover .service-arrow{background:var(--gold-400);}
+  .service-row:hover .service-arrow svg{transform:translateX(2px);}
 
   /* PROCES */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-  .step-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);padding:30px 24px;position:relative;}
-  .step-card .num{font-family:var(--ff-head);font-size:42px;font-weight:700;-webkit-text-stroke:1.5px var(--navy-900);color:transparent;}
-  .step-card h3{font-size:18px;margin:16px 0 8px;font-family:var(--ff-head);}
-  .step-card p{color:var(--muted);font-size:14px;}
-  .step-arrow{position:absolute;top:50%;right:-22px;transform:translateY(-50%);width:22px;height:2px;background:var(--line);display:block;}
-  .step-arrow::after{content:'';position:absolute;right:-1px;top:-4px;width:9px;height:9px;border-top:2px solid var(--line);border-right:2px solid var(--line);transform:rotate(45deg);}
-  .step-card:last-child .step-arrow{display:none;}
+  .timeline{max-width:800px;margin:0 auto;border-top:1px solid var(--line-dark);}
+  .timeline-item{display:grid;grid-template-columns:64px 1fr;gap:26px;padding:30px 0;border-bottom:1px solid var(--line-dark);}
+  .timeline-node{font-family:var(--ff-head);font-weight:700;font-size:32px;color:transparent;-webkit-text-stroke:1.3px var(--gold-400);line-height:1;padding-top:2px;}
+  .timeline-content h3{font-size:19px;margin-bottom:8px;color:#fff;}
+  .timeline-content p{color:var(--muted-dark);font-size:14.5px;max-width:52ch;}
 
   /* FAQ */
-  .faq-list{display:flex;flex-direction:column;gap:14px;max-width:820px;margin:0 auto;}
+  .faq-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;max-width:980px;margin:0 auto;align-items:start;}
   .faq-item{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;}
-  .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;font-weight:700;font-size:15.5px;color:var(--navy-900);}
+  .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;font-weight:700;font-size:15px;color:var(--navy-900);}
   .faq-item summary::-webkit-details-marker{display:none;}
   .faq-item summary .plus{width:26px;height:26px;border-radius:50%;background:var(--paper);display:flex;align-items:center;justify-content:center;flex:none;transition:transform .22s ease, background-color .22s ease;}
   .faq-item summary .plus svg{width:13px;height:13px;color:var(--navy-900);}
@@ -181,8 +201,8 @@
   .faq-item .faq-a{padding:0 24px 22px;color:var(--muted);font-size:14.5px;line-height:1.65;}
 
   /* CONTACT */
-  .contact-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:flex-start;}
-  .contact-info{background:var(--navy-900);color:var(--white);border-radius:var(--radius-lg);padding:36px 32px;position:sticky;top:106px;}
+  .contact-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:flex-start;}
+  .contact-info{background:var(--navy-900);color:var(--white);border-radius:var(--radius-lg);padding:36px 32px;}
   .contact-info h3{font-size:24px;margin-bottom:10px;font-family:var(--ff-head);}
   .contact-info>p{color:var(--muted-dark);font-size:14.5px;margin-bottom:26px;}
   .info-row{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line-dark);}
@@ -191,11 +211,14 @@
   .info-row .ic svg{width:18px;height:18px;color:var(--gold-400);}
   .info-row b{display:block;font-size:14.5px;margin-bottom:2px;}
   .info-row span, .info-row a{display:block;font-size:13.5px;color:var(--muted-dark);}
+  .info-row a+a{margin-top:2px;}
   .info-row a:hover{color:var(--gold-400);}
   .social-row{display:flex;gap:10px;margin-top:26px;}
   .social-row a{width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;}
   .social-row a:hover{background:rgba(255,255,255,.08);}
   .social-row svg{width:17px;height:17px;}
+  .map-frame{margin-top:26px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.16);aspect-ratio:16/10;}
+  .map-frame iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.2) contrast(1.05);}
 
   .form-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:38px;box-shadow:var(--shadow-md);}
   .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
@@ -228,7 +251,7 @@
   .form-success.show{display:flex;}
   .form-success svg{width:20px;height:20px;flex:none;}
 
-  .cta-band{background:linear-gradient(120deg,var(--navy-950),var(--navy-800));border-radius:var(--radius-lg);padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;color:var(--white);}
+  .cta-band{background:var(--navy-950);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);padding:56px 0;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;color:var(--white);}
   .cta-band h2{font-size:clamp(22px,3vw,30px);max-width:480px;}
   .cta-band p{color:var(--muted-dark);margin-top:10px;font-size:14.5px;}
 
@@ -249,25 +272,28 @@
   @media (max-width:1024px){
     .about-wrap{grid-template-columns:1fr;}
     .contact-wrap{grid-template-columns:1fr;}
-    .contact-info{position:static;}
     .footer-grid{grid-template-columns:1fr 1fr;}
-    .steps{grid-template-columns:repeat(2,1fr);}
-    .step-arrow{display:none;}
+    .service-list{grid-template-columns:1fr;gap:0;}
+    .service-col .service-row:first-child{border-top:1px solid var(--line);}
+    .service-list .service-col:first-child .service-row:first-child{border-top:none;}
+    .hero-grid{grid-template-columns:1fr;min-height:0;}
+    .hero-panel{border-left:none;border-top:1px solid var(--line-dark);padding:36px 0;}
+    .hero-panel-row{padding:15px 0;}
   }
   @media (max-width:860px){
-    nav.primary,.header-phone{display:none;}
+    nav.primary{display:none;}
     .header-cta .btn{display:none;}
     .menu-toggle{display:flex;}
-    .offer-grid{grid-template-columns:1fr;}
     .section{padding:64px 0;}
     .form-grid{grid-template-columns:1fr;}
     .cta-band{flex-direction:column;align-items:flex-start;}
+    .faq-list{grid-template-columns:1fr;}
   }
   @media (max-width:520px){
     .container{padding:0 18px;}
-    .hero{padding:52px 0 64px;}
+    .hero-copy{padding:52px 0 40px;}
+    .kicker .kicker-line{display:none;}
     .footer-grid{grid-template-columns:1fr;gap:32px;}
-    .steps{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -278,8 +304,7 @@
 <header class="site" id="site-header">
   <div class="container nav-row">
     <a href="#top" class="brand">
-      <svg aria-hidden="true" focusable="false" class="mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#2D274D"/><path d="M14 42 L24 30 L32 36 L48 16" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 16 H48 V24" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>DE <span class="accent">FUTURUM</span></span>
+      <img class="mark" src="https://defuturum.com/wp-content/uploads/2025/06/logo2.png" alt="DE FUTURUM" width="151" height="32" />
     </a>
     <nav class="primary">
       <a href="#o-nas">O Nas</a>
@@ -289,10 +314,6 @@
       <a href="#kontakt">Kontakt</a>
     </nav>
     <div class="header-cta">
-      <div class="header-phone">
-        <span>Zadzwoń do nas</span>
-        <b>538 100 006</b>
-      </div>
       <a href="#kontakt" class="btn btn-primary btn-sm">Bezpłatna konsultacja</a>
       <button class="menu-toggle" id="menu-open" aria-label="Otwórz menu">
         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -303,9 +324,8 @@
 
 <div class="mobile-panel" id="mobile-panel">
   <div class="top">
-    <a href="#top" class="brand" style="color:#fff;">
-      <svg aria-hidden="true" focusable="false" class="mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#382f5c"/><path d="M14 42 L24 30 L32 36 L48 16" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 16 H48 V24" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      DE FUTURUM
+    <a href="#top" class="brand">
+      <img class="mark" src="https://defuturum.com/wp-content/uploads/2025/06/logo2.png" alt="DE FUTURUM" width="151" height="32" />
     </a>
     <button class="close-btn" id="menu-close" aria-label="Zamknij menu">
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -319,7 +339,6 @@
     <a href="#kontakt">Kontakt</a>
   </nav>
   <div class="foot">
-    <a href="tel:+48538100006" class="btn btn-ghost-dark btn-block">538 100 006</a>
     <a href="#kontakt" class="btn btn-primary btn-block">Bezpłatna konsultacja</a>
   </div>
 </div>
@@ -328,22 +347,33 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <span class="eyebrow on-dark"><span class="dot"></span>Doradztwo kredytowe i finansowe</span>
-        <h1>Kredyt szybciej, łatwiej <br><em>i bez stresu</em>.</h1>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="kicker"><span class="kicker-line"></span>Doradztwo kredytowe i finansowe</span>
+        <h1>Kredyt szybciej, łatwiej <em>i bez stresu</em>.</h1>
         <p class="lead">Wspieramy klientów indywidualnych i firmy w uzyskaniu finansowania — analizujemy sytuację, porównujemy oferty banków, prywatnych inwestorów i instytucji pozabankowych, i prowadzimy Cię krok po kroku aż do podpisania umowy.</p>
         <div class="cta-row">
           <a href="#kontakt" class="btn btn-primary">
             Umów bezpłatną konsultację
             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
-          <a href="#uslugi" class="btn btn-ghost-dark">Zobacz usługi</a>
+          <a href="#uslugi" class="text-link">
+            Zobacz usługi
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
         </div>
-        <div class="trust-row">
-          <div class="trust-item"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Współpraca z bankami w całej Polsce</div>
-          <div class="trust-item"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Działamy zgodnie z regulacjami KNF</div>
-          <div class="trust-item"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Konsultacja bezpłatna i niezobowiązująca</div>
+        <div class="hero-facts">
+          <div class="fact"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Współpracujemy z bankami w całej Polsce</div>
+          <div class="fact"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Działamy zgodnie z regulacjami KNF</div>
+          <div class="fact"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Pierwsza konsultacja bezpłatna i niezobowiązująca</div>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="hero-panel-list">
+          <div class="hero-panel-row"><span>Zakres wsparcia</span><b>11 form finansowania</b></div>
+          <div class="hero-panel-row"><span>Partnerzy</span><b>Banki, inwestorzy, instytucje pozabankowe</b></div>
+          <div class="hero-panel-row"><span>Konsultacja</span><b>Bezpłatna, zdalna lub w biurze</b></div>
+          <div class="hero-panel-row"><span>Siedziba</span><b>Warszawa, Al. Jana Pawła II 43A/37b</b></div>
         </div>
       </div>
     </div>
@@ -360,24 +390,37 @@
       <div class="about-wrap">
         <div class="mission-card reveal">
           <p class="quote">„Wierzymy, że nawet najtrudniejsza sytuacja finansowa może mieć rozwiązanie.”</p>
+          <div class="rule"></div>
           <div class="who">Misja DE FUTURUM</div>
         </div>
-        <div class="check-list reveal">
-          <div class="check-item">
-            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <p>Transparentność<span>Brak ukrytych kosztów i niejasnych warunków — wiesz, na czym stoisz, od pierwszej rozmowy.</span></p>
+        <div class="value-list reveal">
+          <div class="value-row">
+            <span class="value-num">01</span>
+            <div>
+              <h4>Transparentność</h4>
+              <p>Brak ukrytych kosztów i niejasnych warunków — wiesz, na czym stoisz, od pierwszej rozmowy.</p>
+            </div>
           </div>
-          <div class="check-item">
-            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <p>Indywidualne podejście<span>Każdą sprawę analizujemy osobno, dopasowując rozwiązanie do realnej sytuacji klienta.</span></p>
+          <div class="value-row">
+            <span class="value-num">02</span>
+            <div>
+              <h4>Indywidualne podejście</h4>
+              <p>Każdą sprawę analizujemy osobno, dopasowując rozwiązanie do realnej sytuacji klienta.</p>
+            </div>
           </div>
-          <div class="check-item">
-            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <p>Empatia<span>Nie oceniamy — pomagamy. Rozumiemy, że za każdą sprawą stoi konkretny człowiek lub firma.</span></p>
+          <div class="value-row">
+            <span class="value-num">03</span>
+            <div>
+              <h4>Empatia</h4>
+              <p>Nie oceniamy — pomagamy. Rozumiemy, że za każdą sprawą stoi konkretny człowiek lub firma.</p>
+            </div>
           </div>
-          <div class="check-item">
-            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <p>Edukacja finansowa<span>Dokładnie wyjaśniamy każdą procedurę, żebyś podejmował decyzje świadomie.</span></p>
+          <div class="value-row">
+            <span class="value-num">04</span>
+            <div>
+              <h4>Edukacja finansowa</h4>
+              <p>Dokładnie wyjaśniamy każdą procedurę, żebyś podejmował decyzje świadomie.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -392,85 +435,112 @@
         <h2>Finansowanie dopasowane do Twojej sytuacji</h2>
         <p>Od szybkiej gotówki po uporządkowanie historii kredytowej — kompleksowe wsparcie w jednym miejscu.</p>
       </div>
-      <div class="offer-grid">
+      <div class="service-list reveal">
+        <div class="service-col">
 
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 6V4h12v2"/></svg></div>
-          <h3>Kredyt gotówkowy</h3>
-          <p>Minimum formalności, maksymalna wygoda — szybki dostęp do gotówki na dowolny cel.</p>
-          <a href="#kontakt" class="link" data-topic="Kredyt gotówkowy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#kontakt" class="service-row" data-topic="Kredyt gotówkowy">
+            <span class="service-num">01</span>
+            <span class="service-body">
+              <h3>Kredyt gotówkowy</h3>
+              <p>Minimum formalności, maksymalna wygoda — szybki dostęp do gotówki na dowolny cel.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Kredyt firmowy">
+            <span class="service-num">02</span>
+            <span class="service-body">
+              <h3>Kredyt firmowy</h3>
+              <p>Rozwijaj firmę bez ograniczeń — finansowanie dla przedsiębiorców na korzystnych warunkach.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Kredyt pozabankowy">
+            <span class="service-num">03</span>
+            <span class="service-body">
+              <h3>Kredyt pozabankowy</h3>
+              <p>Szybka decyzja i elastyczne warunki — uproszczone procedury i szybsza ocena wniosku.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Prywatni inwestorzy">
+            <span class="service-num">04</span>
+            <span class="service-body">
+              <h3>Prywatni inwestorzy</h3>
+              <p>Indywidualne finansowanie od prywatnych inwestorów — elastyczne formy dopasowane do potrzeb.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Kredyt hipoteczny">
+            <span class="service-num">05</span>
+            <span class="service-body">
+              <h3>Kredyt hipoteczny</h3>
+              <p>Długoterminowe finansowanie zabezpieczone hipoteką — zakup, budowa lub refinansowanie nieruchomości.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Leasingi">
+            <span class="service-num">06</span>
+            <span class="service-body">
+              <h3>Leasingi</h3>
+              <p>Wygodna forma finansowania dla firm — leasing operacyjny i finansowy pojazdów oraz sprzętu.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
         </div>
+        <div class="service-col">
 
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg></div>
-          <h3>Kredyt firmowy</h3>
-          <p>Rozwijaj firmę bez ograniczeń — finansowanie dla przedsiębiorców na korzystnych warunkach.</p>
-          <a href="#kontakt" class="link" data-topic="Kredyt firmowy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#kontakt" class="service-row" data-topic="Pożyczka pod zastaw nieruchomości">
+            <span class="service-num">07</span>
+            <span class="service-body">
+              <h3>Pożyczka pod zastaw nieruchomości</h3>
+              <p>Bezpieczne finansowanie z szybkim dostępem do środków, zabezpieczone Twoją nieruchomością.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Spłata zaległości publicznych">
+            <span class="service-num">08</span>
+            <span class="service-body">
+              <h3>Spłata zaległości publicznych</h3>
+              <p>Wsparcie w regulowaniu zobowiązań wobec ZUS, US, KRD i podobnych instytucji.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Leasing zwrotny">
+            <span class="service-num">09</span>
+            <span class="service-body">
+              <h3>Leasing zwrotny</h3>
+              <p>Odzyskaj zamrożone środki z posiadanego majątku, zachowując możliwość jego dalszego użytkowania.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Czyszczenie baz kredytowych">
+            <span class="service-num">10</span>
+            <span class="service-body">
+              <h3>Czyszczenie baz kredytowych</h3>
+              <p>Poprawa historii kredytowej poprzez weryfikację i usunięcie nieaktualnych wpisów z BIK, BIG, ERIF.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#kontakt" class="service-row" data-topic="Pomoc w spłacie kredytów pozabankowych">
+            <span class="service-num">11</span>
+            <span class="service-body">
+              <h3>Pomoc w spłacie kredytów pozabankowych</h3>
+              <p>Rozwiązania, które pomagają uporządkować istniejące zadłużenie pozabankowe.</p>
+            </span>
+            <span class="service-arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
         </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
-          <h3>Kredyt pozabankowy</h3>
-          <p>Szybka decyzja i elastyczne warunki — uproszczone procedury i szybsza ocena wniosku.</p>
-          <a href="#kontakt" class="link" data-topic="Kredyt pozabankowy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="10" r="3"/><path d="M2 20c0-3 2.5-5 6-5s6 2 6 5"/><path d="M13 20c.5-2.5 2-4 4-4s3.5 1 4 3"/></svg></div>
-          <h3>Prywatni inwestorzy</h3>
-          <p>Indywidualne finansowanie od prywatnych inwestorów — elastyczne formy dopasowane do potrzeb.</p>
-          <a href="#kontakt" class="link" data-topic="Prywatni inwestorzy">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div>
-          <h3>Kredyt hipoteczny</h3>
-          <p>Długoterminowe finansowanie zabezpieczone hipoteką — zakup, budowa lub refinansowanie nieruchomości.</p>
-          <a href="#kontakt" class="link" data-topic="Kredyt hipoteczny">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="14" height="7" rx="1"/><circle cx="7.5" cy="18.5" r="1.8"/><circle cx="15.5" cy="18.5" r="1.8"/><path d="M17 10l3 3v4h-3"/></svg></div>
-          <h3>Leasingi</h3>
-          <p>Wygodna forma finansowania dla firm — leasing operacyjny i finansowy pojazdów oraz sprzętu.</p>
-          <a href="#kontakt" class="link" data-topic="Leasingi">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="14" width="4" height="4" rx="1"/></svg></div>
-          <h3>Pożyczka pod zastaw nieruchomości</h3>
-          <p>Bezpieczne finansowanie z szybkim dostępem do środków, zabezpieczone Twoją nieruchomością.</p>
-          <a href="#kontakt" class="link" data-topic="Pożyczka pod zastaw nieruchomości">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/><path d="M9 13h6M9 17h6"/></svg></div>
-          <h3>Spłata zaległości publicznych</h3>
-          <p>Wsparcie w regulowaniu zobowiązań wobec ZUS, US, KRD i podobnych instytucji.</p>
-          <a href="#kontakt" class="link" data-topic="Spłata zaległości publicznych">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v6h6"/><path d="M20 20v-6h-6"/><path d="M20 10a8 8 0 0 0-14.9-4"/><path d="M4 14a8 8 0 0 0 14.9 4"/></svg></div>
-          <h3>Leasing zwrotny</h3>
-          <p>Odzyskaj zamrożone środki z posiadanego majątku, zachowując możliwość jego dalszego użytkowania.</p>
-          <a href="#kontakt" class="link" data-topic="Leasing zwrotny">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <h3>Czyszczenie baz kredytowych</h3>
-          <p>Poprawa historii kredytowej poprzez weryfikację i usunięcie nieaktualnych wpisów z BIK, BIG, ERIF.</p>
-          <a href="#kontakt" class="link" data-topic="Czyszczenie baz kredytowych">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
-        <div class="offer-card reveal">
-          <div class="offer-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M6.5 6.5l3 3M17.5 6.5l-3 3M6.5 17.5l3-3M17.5 17.5l-3-3"/></svg></div>
-          <h3>Pomoc w spłacie kredytów pozabankowych</h3>
-          <p>Rozwiązania, które pomagają uporządkować istniejące zadłużenie pozabankowe.</p>
-          <a href="#kontakt" class="link" data-topic="Pomoc w spłacie kredytów pozabankowych">Zapytaj o ofertę <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-
       </div>
     </div>
   </section>
@@ -479,33 +549,38 @@
   <section class="section on-dark" id="proces" style="background:linear-gradient(180deg,var(--navy-900),var(--navy-950));color:#fff;">
     <div class="container">
       <div class="section-head center reveal">
-        <span class="eyebrow on-dark"><span class="dot"></span>Jak działamy</span>
+        <span class="eyebrow on-dark">Jak działamy</span>
         <h2>Cztery kroki do finansowania</h2>
         <p>Prosty, przejrzysty proces — od pierwszej rozmowy do wypłaty środków.</p>
       </div>
-      <div class="steps">
-        <div class="step-card reveal">
-          <span class="num">01</span>
-          <h3>Bezpłatna konsultacja</h3>
-          <p>Rozmawiamy o Twojej sytuacji i celu — bez zobowiązań i bez opłat wstępnych.</p>
-          <span class="step-arrow"></span>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-node">01</span>
+          <div class="timeline-content">
+            <h3>Bezpłatna konsultacja</h3>
+            <p>Rozmawiamy o Twojej sytuacji i celu — bez zobowiązań i bez opłat wstępnych.</p>
+          </div>
         </div>
-        <div class="step-card reveal">
-          <span class="num">02</span>
-          <h3>Analiza sytuacji finansowej</h3>
-          <p>Sprawdzamy możliwości i ograniczenia, w tym historię w BIK, BIG i ERIF.</p>
-          <span class="step-arrow"></span>
+        <div class="timeline-item reveal">
+          <span class="timeline-node">02</span>
+          <div class="timeline-content">
+            <h3>Analiza sytuacji finansowej</h3>
+            <p>Sprawdzamy możliwości i ograniczenia, w tym historię w BIK, BIG i ERIF.</p>
+          </div>
         </div>
-        <div class="step-card reveal">
-          <span class="num">03</span>
-          <h3>Dobór oferty</h3>
-          <p>Porównujemy oferty banków, prywatnych inwestorów i instytucji pozabankowych.</p>
-          <span class="step-arrow"></span>
+        <div class="timeline-item reveal">
+          <span class="timeline-node">03</span>
+          <div class="timeline-content">
+            <h3>Dobór oferty</h3>
+            <p>Porównujemy oferty banków, prywatnych inwestorów i instytucji pozabankowych.</p>
+          </div>
         </div>
-        <div class="step-card reveal">
-          <span class="num">04</span>
-          <h3>Umowa i wypłata środków</h3>
-          <p>Prowadzimy Cię przez formalności aż do podpisania umowy i uruchomienia finansowania.</p>
+        <div class="timeline-item reveal">
+          <span class="timeline-node">04</span>
+          <div class="timeline-content">
+            <h3>Umowa i wypłata środków</h3>
+            <p>Prowadzimy Cię przez formalności aż do podpisania umowy i uruchomienia finansowania.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -570,29 +645,6 @@
       </div>
 
       <div class="contact-wrap">
-        <div class="contact-info reveal">
-          <h3>DE FUTURUM</h3>
-          <p>Doradztwo finansowe z ludzką twarzą — nie oceniamy, pomagamy znaleźć wyjście z każdej sytuacji.</p>
-
-          <div class="info-row">
-            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-            <div><b>Adres</b><span>Aleja Jana Pawła II 43A/37b, Warszawa</span></div>
-          </div>
-          <div class="info-row">
-            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.5 2L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2z"/></svg></span>
-            <div><b>Telefon</b><a href="tel:+48538100006">538 100 006</a></div>
-          </div>
-          <div class="info-row">
-            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-            <div><b>E-mail</b><a href="mailto:kontakt@defuturum.com">kontakt@defuturum.com</a></div>
-          </div>
-
-          <div class="social-row">
-            <a href="#" aria-label="Facebook"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="YouTube"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z"/></svg></a>
-          </div>
-        </div>
-
         <form class="form-card reveal" id="contact-form" novalidate>
           <input type="text" name="website" id="website" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
           <div class="form-grid">
@@ -667,22 +719,47 @@
             <span id="form-error-text">Nie udało się wysłać formularza. Spróbuj ponownie lub zadzwoń do nas.</span>
           </div>
         </form>
+
+        <div class="contact-info reveal">
+          <h3>DE FUTURUM</h3>
+          <p>Doradztwo finansowe z ludzką twarzą — nie oceniamy, pomagamy znaleźć wyjście z każdej sytuacji.</p>
+
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><b>Adres</b><span>Aleja Jana Pawła II 43A/37b, Warszawa</span></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.5 2L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><b>Telefon</b><a href="tel:+48538100006">538 100 006</a><a href="tel:+48728877775">728 877 775</a></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><b>E-mail</b><a href="mailto:kontakt@defuturum.com">kontakt@defuturum.com</a></div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z"/></svg></a>
+          </div>
+
+          <div class="map-frame">
+            <iframe src="https://www.google.com/maps?q=Aleja%20Jana%20Paw%C5%82a%20II%2043A%2F37b%2C%20Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — lokalizacja DE FUTURUM"></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA BAND -->
-  <section class="section" style="padding-top:0;">
-    <div class="container">
-      <div class="cta-band reveal">
-        <div>
-          <h2>Gotowy, żeby uporządkować swoje finanse?</h2>
-          <p>Bez zobowiązań, bez opłat wstępnych — porozmawiajmy o możliwościach.</p>
-        </div>
-        <a href="#kontakt" class="btn btn-primary">Napisz do nas teraz</a>
+  <div class="cta-band reveal">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
+      <div>
+        <h2>Gotowy, żeby uporządkować swoje finanse?</h2>
+        <p>Bez zobowiązań, bez opłat wstępnych — porozmawiajmy o możliwościach.</p>
       </div>
+      <a href="#kontakt" class="btn btn-primary">Napisz do nas teraz</a>
     </div>
-  </section>
+  </div>
 
 </main>
 
@@ -691,8 +768,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#top" class="brand">
-          <svg aria-hidden="true" focusable="false" class="mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#382f5c"/><path d="M14 42 L24 30 L32 36 L48 16" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 16 H48 V24" stroke="#E7C84B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          DE FUTURUM
+          <img class="mark" src="https://defuturum.com/wp-content/uploads/2025/06/logo2.png" alt="DE FUTURUM" width="151" height="32" />
         </a>
         <p class="desc">Doradztwo kredytowe i finansowe — współpracujemy z bankami, prywatnymi inwestorami i instytucjami pozabankowymi w całej Polsce, zgodnie z regulacjami KNF.</p>
       </div>
@@ -719,6 +795,7 @@
         <ul>
           <li>Aleja Jana Pawła II 43A/37b, Warszawa</li>
           <li><a href="tel:+48538100006">538 100 006</a></li>
+          <li><a href="tel:+48728877775">728 877 775</a></li>
           <li><a href="mailto:kontakt@defuturum.com">kontakt@defuturum.com</a></li>
         </ul>
       </div>
