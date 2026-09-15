@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" href="/assets/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,7 +62,7 @@
     --shadow-md:0 20px 40px -20px rgba(28,24,51,.28);
     --shadow-lg:0 30px 60px -25px rgba(28,24,51,.38);
     --container:1160px;
-    --ff-head:'Cormorant Garamond',Georgia,serif;
+    --ff-head:'Sora',system-ui,sans-serif;
     --ff-body:'Inter',system-ui,sans-serif;
   }
   *,*::before,*::after{box-sizing:border-box;}
@@ -72,7 +72,7 @@
     *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
   }
   body{margin:0;font-family:var(--ff-body);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;}
-  h1,h2,h3,h4{font-family:var(--ff-head);margin:0;line-height:1.15;font-weight:700;}
+  h1,h2,h3,h4{font-family:var(--ff-head);margin:0;line-height:1.15;font-weight:700;letter-spacing:-.02em;}
   p{margin:0;}
   a{color:inherit;text-decoration:none;}
   img{max-width:100%;display:block;}
@@ -119,8 +119,7 @@
   .close-btn{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:transparent;color:var(--white);display:flex;align-items:center;justify-content:center;}
 
   .hero{background:var(--navy-950);color:var(--white);overflow:hidden;position:relative;border-bottom:1px solid var(--line-dark);}
-  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:0;min-height:560px;}
-  .hero-copy{padding:70px 0 64px;display:flex;flex-direction:column;justify-content:center;}
+  .hero-copy{padding:110px 0 96px;max-width:700px;}
   .kicker{display:flex;align-items:center;gap:10px;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-300);}
   .kicker .kicker-line{width:26px;height:1px;background:var(--gold-400);display:inline-block;flex:none;}
   .hero h1{font-size:clamp(34px,4.6vw,54px);font-weight:700;margin:22px 0 20px;max-width:14ch;}
@@ -134,11 +133,6 @@
   .hero-facts .fact{display:flex;gap:12px;font-size:13.5px;color:var(--muted-dark);}
   .hero-facts .fact svg{width:17px;height:17px;color:var(--gold-400);flex:none;margin-top:1px;}
 
-  .hero-panel{position:relative;border-left:1px solid var(--line-dark);display:flex;align-items:center;padding:56px 0;}
-  .hero-panel-list{width:100%;}
-  .hero-panel-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:15px 44px;border-top:1px solid var(--line-dark);font-size:14px;color:var(--muted-dark);}
-  .hero-panel-row:first-child{border-top:none;}
-  .hero-panel-row b{font-family:var(--ff-head);font-weight:700;font-size:16.5px;color:var(--white);}
 
   .section{padding:100px 0;}
   section[id]{scroll-margin-top:96px;}
@@ -154,7 +148,7 @@
   /* O NAS */
   .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
   .mission-card{background:var(--navy-900);color:var(--white);border-radius:var(--radius-lg);padding:38px 34px;position:relative;border-top:3px solid var(--gold-400);}
-  .mission-card p.quote{font-family:var(--ff-head);font-size:clamp(21px,2.4vw,26px);line-height:1.4;color:var(--white);}
+  .mission-card p.quote{font-family:var(--ff-head);font-weight:600;font-size:clamp(20px,2.2vw,24px);line-height:1.4;color:var(--white);}
   .mission-card .rule{width:44px;height:3px;background:var(--gold-400);border-radius:3px;margin-top:24px;}
   .mission-card .who{margin-top:14px;font-size:13px;color:var(--muted-dark);font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
 
@@ -164,7 +158,7 @@
   .value-row::before{content:'';position:absolute;left:0;top:20px;bottom:20px;width:2px;background:transparent;transition:background-color .2s ease;}
   .value-row:hover{padding-left:22px;}
   .value-row:hover::before{background:var(--gold-400);}
-  .value-num{font-family:var(--ff-head);font-weight:700;font-size:26px;color:transparent;-webkit-text-stroke:1.2px var(--navy-800);flex:none;width:34px;line-height:1;padding-top:2px;}
+  .value-num{font-family:var(--ff-body);font-weight:800;font-size:13px;color:var(--muted);flex:none;width:34px;line-height:1.4;padding-top:3px;}
   .value-row h4{font-family:var(--ff-head);font-size:17.5px;font-weight:700;color:var(--navy-950);margin-bottom:4px;}
   .value-row p{font-size:13.5px;color:var(--muted);}
 
@@ -174,7 +168,7 @@
   .service-row{display:flex;align-items:flex-start;gap:18px;padding:24px 2px;border-top:1px solid var(--line);transition:padding-left .2s ease;}
   .service-col .service-row:first-child{border-top:none;}
   .service-row:hover{padding-left:8px;}
-  .service-num{font-family:var(--ff-head);font-size:32px;font-weight:700;color:transparent;-webkit-text-stroke:1.3px var(--navy-800);flex:none;width:44px;line-height:1;padding-top:2px;}
+  .service-num{font-family:var(--ff-body);font-size:13px;font-weight:800;color:var(--muted);flex:none;width:44px;line-height:1.4;padding-top:3px;}
   .service-body{flex:1;}
   .service-body h3{font-size:17.5px;font-family:var(--ff-head);font-weight:700;}
   .service-body p{color:var(--muted);font-size:13.5px;margin-top:6px;}
@@ -186,7 +180,7 @@
   /* PROCES */
   .timeline{max-width:800px;margin:0 auto;border-top:1px solid var(--line-dark);}
   .timeline-item{display:grid;grid-template-columns:64px 1fr;gap:26px;padding:30px 0;border-bottom:1px solid var(--line-dark);}
-  .timeline-node{font-family:var(--ff-head);font-weight:700;font-size:32px;color:transparent;-webkit-text-stroke:1.3px var(--gold-400);line-height:1;padding-top:2px;}
+  .timeline-node{font-family:var(--ff-body);font-weight:800;font-size:13px;color:var(--gold-400);line-height:1.4;padding-top:3px;}
   .timeline-content h3{font-size:19px;margin-bottom:8px;color:#fff;}
   .timeline-content p{color:var(--muted-dark);font-size:14.5px;max-width:52ch;}
 
@@ -276,9 +270,6 @@
     .service-list{grid-template-columns:1fr;gap:0;}
     .service-col .service-row:first-child{border-top:1px solid var(--line);}
     .service-list .service-col:first-child .service-row:first-child{border-top:none;}
-    .hero-grid{grid-template-columns:1fr;min-height:0;}
-    .hero-panel{border-left:none;border-top:1px solid var(--line-dark);padding:36px 0;}
-    .hero-panel-row{padding:15px 0;}
   }
   @media (max-width:860px){
     nav.primary{display:none;}
@@ -347,7 +338,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container hero-grid">
+    <div class="container">
       <div class="hero-copy">
         <span class="kicker"><span class="kicker-line"></span>Doradztwo kredytowe i finansowe</span>
         <h1>Kredyt szybciej, łatwiej <em>i bez stresu</em>.</h1>
@@ -366,14 +357,6 @@
           <div class="fact"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Współpracujemy z bankami w całej Polsce</div>
           <div class="fact"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Działamy zgodnie z regulacjami KNF</div>
           <div class="fact"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Pierwsza konsultacja bezpłatna i niezobowiązująca</div>
-        </div>
-      </div>
-      <div class="hero-panel">
-        <div class="hero-panel-list">
-          <div class="hero-panel-row"><span>Zakres wsparcia</span><b>11 form finansowania</b></div>
-          <div class="hero-panel-row"><span>Partnerzy</span><b>Banki, inwestorzy, instytucje pozabankowe</b></div>
-          <div class="hero-panel-row"><span>Konsultacja</span><b>Bezpłatna, zdalna lub w biurze</b></div>
-          <div class="hero-panel-row"><span>Siedziba</span><b>Warszawa, Al. Jana Pawła II 43A/37b</b></div>
         </div>
       </div>
     </div>
